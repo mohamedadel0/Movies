@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:id="@+id/title"
+                            android:textAlignment="center"
+                            android:background="#333"
+                            android:textColor="#FFF"
+                            android:padding="10dp"
+                            android:textSize="25sp"
+                            android:layout_marginBottom="10dp"
+                            android:textAllCaps="true"
+                            android:textStyle="italic|bold"
+                            />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Release_Date: "
+                                android:id="@+id/textView"
+                                android:textAlignment="center"
+                                android:textSize="19sp"
+                                android:textStyle="bold|italic"
+                                android:textIsSelectable="false" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/date"
+                                android:textStyle="bold|italic"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3"
+                                android:text="Vote_Average: "
+                                android:textStyle="bold|italic"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="19sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/vote_average"
+                                android:textColor="#430374"
+                                android:textStyle="bold|italic"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkBox"
+                            android:button="@android:drawable/btn_star"
+                            android:layout_marginLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3498db"
+                android:textStyle="bold|italic"
+                android:textColor="#FFF"
+                android:text="overview"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:id="@+id/line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/overview"
+                android:background="#333"
+                android:textColor="#FFF"
+                android:textStyle="bold|italic"
+                android:padding="10dp"
+                android:lineSpacingExtra="3dp"
+                android:scrollbars="vertical"
+                android:textSize="20sp" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:nestedScrollingEnabled="true"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3498db"
+            android:textStyle="bold|italic"
+            android:textColor="#FFF"
+            android:text="Reviews"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="25sp"
+             />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            android:nestedScrollingEnabled="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
